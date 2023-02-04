@@ -1,0 +1,12 @@
+{% block content %}
+
+<form class="form-inline" method="POST" action="/search">
+	{% csrf_token %}
+  <div class="form-group mb-2">
+    <label for="category" class="sr-only">Category</label>
+    <input type="text" class="form-control-plaintext" id="category" placeholder="Type Your Category">
+  </div>
+  <button type="submit" class="btn btn-primary mb-2">Search</button>
+</form>
+
+{% endblock content %}
